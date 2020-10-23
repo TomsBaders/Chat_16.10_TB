@@ -29,23 +29,22 @@
         {% endblock %}
     </div>
     <h1>My Friends</h1>
-        <li>Joe <!-- Button trigger modal -->
+        <li>Joe
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
               Unfriend
             </button>
             
-            <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Are you sure?</h5>
+                    <p id="staticBackdropLabel" class="text-danger font-weight-bold">Unfriend</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    Do you want to unfriend Joe?
+                    Do you want to unfriend this user?
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
@@ -55,12 +54,13 @@
               </div>
             </div>
 
+            <a class="btn btn-primary" href="/chat">Send Message</a> </li> 
+        <li>Matt <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Unfriend</button>
             
             <a class="btn btn-primary" href="/chat">Send Message</a> </li> 
-        <li>Matt <button type="button" class="btn btn-danger">Unfriend</button>
-            <a class="btn btn-primary" href="/chat">Send Message</a> </li></li> 
-        <li>Dan <button type="button" class="btn btn-danger">Unfriend</button>
-            <a class="btn btn-primary" href="/chat">Send Message</a> </li></li> 
+        <li>Dan <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Unfriend</button>
+            
+            <a class="btn btn-primary" href="/chat">Send Message</a> </li> 
       </ul>
      
 </body>
