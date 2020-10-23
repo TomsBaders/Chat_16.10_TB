@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <h1>ChatPalace</h1>
-  <header>
-    <ul>
-        <li>
-            <a href="/">Home</a>
+    <ul class="nav">
+        <span class="navbar-brand mb-0 h1 navbar navbar-light bg-light">ChatPalace</span>
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
         </li>
-        <li>
-            <a href="/chat">Chat</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="/chat">Chat</a>
         </li>
-        <li>
-            <a href="/friends">Friends</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="/friends">Friends</a>
         </li>
-    </ul>
-</header>
+      </ul>
 
 <div class="container">
     {% block content %}
@@ -41,5 +39,6 @@
         </div>
       </div>
       <div class="chatwindow bg-dark rounded m-2 p-2"></div>
+
 </body>
 </html>
