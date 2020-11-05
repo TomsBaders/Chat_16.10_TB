@@ -21,10 +21,7 @@
         </li>
       </ul>
 
-<div class="container">
-    {% block content %}
-    {% endblock %}
-</div>
+<div class="container"></div>
 
 <h4>Choose who to send this message to!</h4>
 <input type="checkbox" >Joe <button class="btn btn-secondary" type="button">Video Chat</button></input>
@@ -32,13 +29,16 @@
 <input type="checkbox" >Matt <button class="btn btn-secondary" type="button">Video Chat</button></input>
 <br>
 <input type="checkbox" >Dan <button class="btn btn-secondary" type="button">Video Chat</button></input>
-    <div class="input-group mb-3">
-      <br>
-        <input type="text" class="form-control" placeholder="Message" aria-label="Person"><button class="btn btn-outline-success" type="button">Send</button>
-        <div class="input-group-append">
-        </div>
-      </div>
-      <div class="chatwindow bg-dark rounded m-2 p-2"></div>
 
+<ul><input type="text" id="myText" placeholder="Type"></input><button onclick="myFunction()">Send Message</button></ul>
+
+<p id="demo" div class="container-sm p-3 my-3 border"></p>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+  </script>
 </body>
 </html>
